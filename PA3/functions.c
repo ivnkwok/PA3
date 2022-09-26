@@ -51,21 +51,21 @@ double find_max(double num1, double num2, double num3, double num4, double num5)
 }
 double find_min(double num1, double num2, double num3, double num4, double num5) {
 	double min = num1;
-	if (num2 > min) {
+	if (num2 < min) {
 		min = num2;
 	}
-	if (num3 > min) {
+	if (num3 < min) {
 		min = num3;
 	}
-	if (num4 > min) {
+	if (num4 < min) {
 		min = num4;
 	}
-	if (num5 > min) {
+	if (num5 < min) {
 		min = num5;
 	}
 	return min;
 }
 
 void print_double(FILE* outfile, double num) {
-	fprintf(outfile, "%.2lf", num);
+	fprintf(outfile, "%.2lf\n", num);
 }
